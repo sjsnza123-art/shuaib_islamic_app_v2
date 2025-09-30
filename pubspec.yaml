@@ -1,8 +1,6 @@
-name: shuaib_islamic_app_v2
-description: A new Flutter Islamic app project.
-
-publish_to: 'none' # Remove this line if you plan to publish to pub.dev
-
+name: noor_hidayat
+description: A spiritually enriching Islamic app with Quran, Hadith, Azkar, Q&A, and videos.
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
@@ -11,8 +9,24 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   cupertino_icons: ^1.0.2
+
+  # قرآن، حدیث، اذکار کے لیے
+  http: ^1.1.0
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  flutter_svg: ^2.0.7
+  google_fonts: ^6.0.0
+
+  # ویڈیوز اور آڈیو کے لیے
+  video_player: ^2.7.2
+  chewie: ^1.7.1
+  just_audio: ^0.9.36
+
+  # سوال و جواب اور UI کے لیے
+  flutter_markdown: ^0.6.14
+  url_launcher: ^6.2.5
+  animations: ^2.0.8
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +34,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/quran/
+    - assets/hadith/
+    - assets/azkar/
+    - assets/audio/
+    - assets/video/
+    - assets/images/
+    - assets/fonts/
